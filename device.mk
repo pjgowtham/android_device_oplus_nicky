@@ -246,11 +246,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
+    android.hardware.light-service.nicky
 
 # LiveDisplay
-#PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oplus
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.1-service.nicky
 
 # Media
 PRODUCT_PACKAGES += \
@@ -347,7 +347,6 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi \
     hardware/oplus
 
 # Telephony
