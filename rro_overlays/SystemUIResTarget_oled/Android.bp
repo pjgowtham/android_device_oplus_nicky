@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "SystemUIResTarget_oled",
+    device_specific: true,
+}
