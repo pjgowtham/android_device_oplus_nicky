@@ -1,0 +1,1 @@
+allow adsprpcd proc:file { getattr open read };

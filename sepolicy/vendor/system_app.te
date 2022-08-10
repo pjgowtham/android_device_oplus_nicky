@@ -1,0 +1,5 @@
+allow system_app proc_pagetypeinfo:file { getattr open read };
+allow system_app sysfs_zram:dir search;
+allow system_app zygote:unix_stream_socket getopt;
+allow system_app vendor_proc_display:dir { search };
+binder_call(system_app, hal_power_default);

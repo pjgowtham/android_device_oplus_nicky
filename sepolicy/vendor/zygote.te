@@ -1,0 +1,2 @@
+allow zygote zygote:capability { kill };
+allow zygote vendor_unification_prop:file { read };

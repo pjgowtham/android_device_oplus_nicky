@@ -1,0 +1,2 @@
+r_dir_file(thermal-engine, sysfs_usb_supply)
+allow thermal-engine sysfs:dir { open read };

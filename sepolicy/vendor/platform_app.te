@@ -1,0 +1,2 @@
+allow platform_app rild:binder { call transfer };
+allow platform_app zygote:unix_stream_socket getopt;

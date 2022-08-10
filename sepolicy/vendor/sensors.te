@@ -1,0 +1,3 @@
+rw_dir_file(sensors, vendor_persist_engineer_file)
+rw_dir_file(sensors,vendor_sysfs_sensor_fb)
+allow sensors sensors_vendor_data_file:fifo_file { open read };

@@ -1,3 +1,6 @@
+# Custom Unification Prop
+type vendor_unification_prop, property_type;
+
 # Fingerprint
 vendor_internal_prop(vendor_fingerprint_prop)
 
@@ -6,3 +9,6 @@ vendor_internal_prop(vendor_modem_prop)
 
 # RIL
 vendor_internal_prop(vendor_nw_exported_system_prop)
+
+# Power
+type vendor_power_prop, property_type;

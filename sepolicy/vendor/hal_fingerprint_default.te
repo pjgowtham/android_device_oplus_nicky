@@ -14,3 +14,11 @@ r_dir_file(hal_fingerprint_default, vendor_proc_fingerprint)
 get_prop(hal_fingerprint_default, system_oplus_project_prop)
 set_prop(hal_fingerprint_default, system_fingerprint_prop)
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+allow hal_fingerprint_default sysfs_devfreq:dir { search read };
+allow hal_fingerprint_default sysfs:file { write };
+allow hal_fingerprint_default sysfs_devfreq:file { read open getattr };
+allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
+allow hal_fingerprint_default uhid_device:chr_file { write open ioctl };
+allow hal_fingerprint_default sysfs_hal_fingerprint_default:file { write open read };
+
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop);
