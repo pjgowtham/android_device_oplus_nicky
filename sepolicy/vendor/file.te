@@ -3,6 +3,7 @@ type vendor_proc_tri_state_key, fs_type, proc_type;
 
 # Camera
 type vendor_persist_camera_file, file_type;
+type vendor_proc_torch, fs_type, proc_type;
 
 # Charging
 type vendor_proc_wireless, fs_type, proc_type;
@@ -10,13 +11,16 @@ type vendor_proc_wireless, fs_type, proc_type;
 # Devinfo
 type proc_devinfo, fs_type, proc_type;
 
-
 # Display
 type vendor_proc_display, fs_type, proc_type;
+type vendor_sysfs_graphics, fs_type, sysfs_type;
 
 # Engineering
 type vendor_persist_engineer_file, file_type;
 type vendor_proc_engineer, fs_type, proc_type;
+
+# RIL
+type cache_nvitems_file, file_type;
 
 # Fingerprint
 type sysfs_hal_fingerprint_default, fs_type, sysfs_type;

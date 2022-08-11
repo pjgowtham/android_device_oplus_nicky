@@ -1,3 +1,6 @@
+# Camera
+genfscon proc /qcom_flash                                                u:object_r:vendor_proc_torch:s0
+
 # Charging
 genfscon proc /wireless                                                u:object_r:vendor_proc_wireless:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/ac    u:object_r:sysfs_battery_supply:s0
@@ -5,24 +8,19 @@ genfscon sysfs /devices/platform/soc/soc:oplus,chg_intf/oplus_chg      u:object_
 
 # Devinfo
 genfscon proc /devinfo        u:object_r:proc_devinfo:s0
+genfscon proc /oplusVersion   u:object_r:vendor_proc_oplus_version:s0
 
 # Display
 genfscon proc /devinfo/lcd              u:object_r:vendor_proc_display:s0
 genfscon proc /touchpanel               u:object_r:vendor_proc_display:s0
-genfscon sysfs /kernel/oplus_display    u:object_r:sysfs_graphics:s0
+genfscon sysfs /kernel/oplus_display    u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /kernel/oppo_display     u:object_r:vendor_sysfs_graphics:s0
 
 # Engineering
 genfscon proc /oplus_rf    u:object_r:vendor_proc_engineer:s0
 
 # Fingerprint
 genfscon proc /fp_id    u:object_r:vendor_proc_fingerprint:s0
-
-# Power
-genfscon sysfs /devices/virtual/graphics/fb0                    u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/virtual/graphics/fb1                    u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/virtual/graphics/fb2                    u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,gpubw             u:object_r:sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpubw             u:object_r:sysfs_devfreq:s0
 
 # Power supply
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/ac u:object_r:sysfs_usb_supply:s0

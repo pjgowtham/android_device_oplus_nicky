@@ -1,2 +1,3 @@
 allow netmgrd init:unix_stream_socket connectto;
 allow netmgrd property_socket:sock_file write;
+allow netmgrd vendor_default_prop:property_service { set };

@@ -1,2 +1,3 @@
 allow zygote zygote:capability { kill };
-allow zygote vendor_unification_prop:file { read };
+allow zygote vendor_oplus_project_prop:file { open read getattr };
+allow zygote vendor_fingerprint_prop:file { open read getattr };

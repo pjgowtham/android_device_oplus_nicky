@@ -18,4 +18,5 @@ allow qti_init_shell vfat:file { getattr open read };
 allow qti_init_shell vendor_camera_data_file:dir { getattr open read add_name create write };
 allow qti_init_shell vfat:dir search;
 allow qti_init_shell sysfs:file { write } ;
-set_prop(qti_init_shell, vendor_unification_prop);
+set_prop(qti_init_shell, vendor_fingerprint_prop);
+set_prop(qti_init_shell, vendor_oplus_project_prop);

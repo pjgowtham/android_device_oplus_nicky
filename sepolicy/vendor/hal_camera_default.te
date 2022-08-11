@@ -1,3 +1,5 @@
+hal_attribute_hwservice(hal_camera, vendor_hal_camera_extension_hwservice)
+
 allow hal_camera_default vendor_hal_orms_hwservice:hwservice_manager find;
 
 allow hal_camera_default mnt_vendor_file:dir search;
@@ -6,5 +8,8 @@ allow hal_camera_default proc_meminfo:file r_file_perms;
 
 allow hal_camera_default vendor_persist_camera_file:dir w_dir_perms;
 allow hal_camera_default vendor_persist_camera_file:file create_file_perms;
-
-allow hal_camera_default proc:file { read open };
+allow hal_camera_default vendor_camera_prop:property_service { set };
+allow hal_camera_default vendor_camera_prop:file { getattr read open };
+allow hal_camera_default system_oplus_project_prop:file { getattr read open };
+allow hal_camera_default system_prop:file { getattr read open };
+allow hal_camera_default vendor_proc_torch:file rw_file_perms;

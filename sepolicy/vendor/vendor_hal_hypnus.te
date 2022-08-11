@@ -1,0 +1,10 @@
+type vendor_hal_hypnus_default, domain;
+hal_server_domain(vendor_hal_hypnus_default, vendor_hal_hypnus)
+
+type vendor_hal_hypnus_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_hal_hypnus_default)
+
+binder_call(vendor_hal_hypnus_client, vendor_hal_hypnus_server)
+binder_call(vendor_hal_hypnus_server, vendor_hal_hypnus_client)
+
+hal_attribute_hwservice(vendor_hal_hypnus, vendor_hal_hypnus_hwservice)

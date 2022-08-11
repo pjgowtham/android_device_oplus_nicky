@@ -1,2 +1,0 @@
-allow fsck self:capability kill;
-allow fsck emmc_block_device:blk_file { ioctl open read write };

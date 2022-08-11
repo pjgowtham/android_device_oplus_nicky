@@ -1,3 +1,9 @@
-# ORMS
+# Camera
+type vendor_hal_camera_extension_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_orms_hwservice, hwservice_manager_type, protected_hwservice;
+
+# Hypnus
+type vendor_hal_hypnus_hwservice, hwservice_manager_type, protected_hwservice;
+
+# QTI mwqem adapter
 type vendor_hal_mwqem_hwservice, hwservice_manager_type, protected_hwservice;
